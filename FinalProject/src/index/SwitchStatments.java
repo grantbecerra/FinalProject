@@ -22,6 +22,11 @@ case 10:
 case 20:
 	System.out.println("You have returned American Assassin");
 	break;
+
+case 20:
+	System.out.println("You have returned American Assassin");
+	break;
+
 case 30:
 	System.out.println("You have returned My Little Pony: The Movie");
 	break;
@@ -45,7 +50,10 @@ case 90:
 	break;
 case 100:
 	System.out.println("You have returned ");
+
+
 	break;
+
 }
 	}
 }
