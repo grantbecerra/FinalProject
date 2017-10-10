@@ -10,20 +10,23 @@ int user;
 
 Scanner input = new Scanner(System.in);
 
-System.out.print("Please enter your student number >>>");
+System.out.println("Would you like to return a movie?");
+System.out.print("Please scan movie.");
 user = input.nextInt();
 
 switch(user)
 {
-case 137431:
-	System.out.println("You have returned the Kingsman");
-	break;
 case 10:
-	System.out.println("You have returned American Assassin");
+	System.out.println("You have returned the Kingsman");
 	break;
 case 20:
 	System.out.println("You have returned American Assassin");
 	break;
+
+case 20:
+	System.out.println("You have returned American Assassin");
+	break;
+
 case 30:
 	System.out.println("You have returned My Little Pony: The Movie");
 	break;
@@ -47,6 +50,10 @@ case 90:
 	break;
 case 100:
 	System.out.println("You have returned ");
+
+
+	break;
+
 }
 	}
 }
