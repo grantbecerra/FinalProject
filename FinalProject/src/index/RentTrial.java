@@ -9,26 +9,37 @@ public class RentTrial
 	{
 		String choiceTheKingsman2;
 		String theKingsman2Info; 
+		Double kingsman2Cost = 3.00;
 		String choiceAmericanAssassin;
 		String americanAssassinInfo;
+		Double americanAssassinCost = 3.00;
 		String choiceIt;
 		String itInfo;
+		Double itCost = 3.00;
 		String choiceAmericanMade;
 		String americanMadeInfo;
+		Double americanMadeCost = 3.00;
 		String myLittlePonyInfo;
 		String choiceMyLittlePony;
+		Double myLittlePonyCost = 2.00;
 		String bladeRunnerInfo;
 		String choiceBladeRunner;
+		Double bladeRunnerCost = 3.00;
 		String theMountainBetweenUsInfo;
 		String choiceTheMountainBetweenUs;
+		Double theMountainBetweenUsCost = 2.00;
 		String happyDeathDayInfo;
 		String choiceHappyDeathDay;
+		Double happyDeathDayCost = 3.00;
 		String braveInfo;
 		String choiceBrave;
+		Double braveCost = 3.00;
 		String spidermanHomecomingInfo;
 		String choiceSpidermanHomecoming;
+		Double spidermanHomecomingCost = 3.00;
 		String movieChoice;
 		Scanner input = new Scanner(System.in);
+		Double total = 0.00;
 		
 			System.out.println("The Kingsman 2");
 			System.out.println("American Assassin");
@@ -37,7 +48,7 @@ public class RentTrial
 			movieChoice = input.nextLine();
 			if("The Kingsman 2".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice);
+				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
 				System.out.print("Would you like more Information on The Kingsman 2? Yes or No ");
 				theKingsman2Info = input.nextLine();
 				if("Yes".equalsIgnoreCase(theKingsman2Info))
@@ -54,17 +65,23 @@ public class RentTrial
 					choiceTheKingsman2 = input.nextLine();
 						if("Yes".equalsIgnoreCase(choiceTheKingsman2))
 						{
+							total = (total + kingsman2Cost);
 							System.out.println(""
-									+"\n Thank you for renting The Kingsman 2, That will Be $3.00");
+									+"\n Thank you for renting The Kingsman 2.");
+							System.out.print(""
+									+"\n If you would like to rent another movie please enter the movie title");	
+							
+							movieChoice = input.nextLine();
 						}
 						else
 							System.out.print(""
-									+"\n Would you like to rent another movie?");	
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();
 						}
 						}
 			if("American Assassin".equalsIgnoreCase(movieChoice))
 					{
-				System.out.println("You chose " + movieChoice);
+				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
 				System.out.print("Would you like more Information on American Assassin? Yes or No ");
 				americanAssassinInfo = input.nextLine();
 				if("Yes".equalsIgnoreCase(americanAssassinInfo))
@@ -80,17 +97,22 @@ public class RentTrial
 							choiceAmericanAssassin = input.nextLine();
 								if("Yes".equalsIgnoreCase(choiceAmericanAssassin))
 								{
+									total = (total + americanAssassinCost);
 									System.out.println(""
-											+"\n Thank you for renting American Assassin, That will Be $3.00");
+											+"\n Thank you for renting American Assassin.");
+									System.out.print(""
+											+"\n If you would like to rent another movie please enter the movie title");	
+									movieChoice = input.nextLine();
 								}
 								else
 									System.out.print(""
-											+ "\n Would you like to rent another movie? Yes or No");
+											+"\n If you would like to rent another movie please enter the movie title");	
+								movieChoice = input.nextLine();
 						}
 						}
 			if("It".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice);
+				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
 				System.out.print("Would you like more Information on It? Yes or No ");
 				itInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(itInfo))
@@ -106,17 +128,22 @@ public class RentTrial
 					choiceIt = input.nextLine();
 						if("Yes".equalsIgnoreCase(choiceIt))
 						{
+							total = (total + itCost);
 							System.out.println(""
-									+"\n Thank you for renting It, That will Be $3.00");
+									+"\n Thank you for renting It.");
+							System.out.print(""
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();
 						}
 						else
 							System.out.print(""
-									+ "\n Would you like to rent another movie? Yes or No");				
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();			
 						}
 						}
 			if("My Little Pony".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice);
+				System.out.println("You chose " + movieChoice + " this movie cost 2.00");
 				System.out.print("Would you like more Information on My Little Pony? Yes or No ");
 				myLittlePonyInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(myLittlePonyInfo))
@@ -129,17 +156,22 @@ public class RentTrial
 					choiceMyLittlePony = input.nextLine();
 						if("Yes".equalsIgnoreCase(choiceMyLittlePony))
 						{
+							total = (total + myLittlePonyCost);
 							System.out.println(""
-									+"\n Thank you for renting My Little Pony, That will Be $3.00");
+									+"\n Thank you for renting My Little Pony.");
+							System.out.print(""
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();
 						}
 						else
 							System.out.print(""
-									+ "\n Would you like to rent another movie? Yes or No");	
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();
 						}
 						}
 			if("Blade Runner 2049".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice);
+				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
 				System.out.print("Would you like more Information on Blade Runner 2049? Yes or No ");
 				bladeRunnerInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(bladeRunnerInfo))
@@ -156,16 +188,20 @@ public class RentTrial
 						if("Yes".equalsIgnoreCase(choiceBladeRunner))
 						{
 							System.out.println(""
-									+"\n Thank you for renting Blade Runner 2049, That will Be $3.00");
+									+"\n Thank you for renting Blade Runner 2049.");
+							System.out.print(""
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();
 						}
 						else
 							System.out.print(""
-									+ "\n Would you like to rent another movie? Yes or No");				
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();			
 						}
 						}
 			if("American Made".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice);
+				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
 				System.out.print("Would you like more Information on American Made? Yes or No ");
 				americanMadeInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(americanMadeInfo))
@@ -183,16 +219,20 @@ public class RentTrial
 						if("Yes".equalsIgnoreCase(choiceAmericanMade))
 						{
 							System.out.println(""
-									+"\n Thank you for renting American Made, That will Be $3.00");
+									+"\n Thank you for renting American Made.");
+							System.out.print(""
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();
 						}
 						else
 							System.out.print(""
-									+ "\n Would you like to rent another movie? Yes or No");	
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();	
 						}
 						}
 			if("The Mountain Betwween Us".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice);
+				System.out.println("You chose " + movieChoice + " this movie cost 2.00");
 				System.out.print("Would you like more Information on The Mountain Betwween Us? Yes or No ");
 				choiceTheMountainBetweenUs = input.nextLine();
 					if("Yes".equalsIgnoreCase(choiceTheMountainBetweenUs))
@@ -209,16 +249,20 @@ public class RentTrial
 						if("Yes".equalsIgnoreCase(choiceTheMountainBetweenUs))
 						{
 							System.out.println(""
-									+"\n Thank you for renting The Mountain Betwween Us, That will Be $3.00");
+									+"\n Thank you for renting The Mountain Betwween Us.");
+							System.out.print(""
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();
 						}
 						else
 							System.out.print(""
-									+ "\n Would you like to rent another movie? Yes or No");	
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();	
 						}
 						}
 			if("Happy Death Day".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice);
+				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
 				System.out.print("Would you like more Information on Happy Death Day? Yes or No ");
 				happyDeathDayInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(happyDeathDayInfo))
@@ -236,16 +280,20 @@ public class RentTrial
 						if("Yes".equalsIgnoreCase(choiceHappyDeathDay))
 						{
 							System.out.println(""
-									+"\n Thank you for renting Happy Death Day, That will Be $3.00");
+									+"\n Thank you for renting Happy Death Day.");
+							System.out.print(""
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();
 						}
 						else
 							System.out.print(""
-									+ "\n Would you like to rent another movie? Yes or No");				
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();				
 						}
 						}
 			if("Brave".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice);
+				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
 				System.out.print("Would you like more Information on Brave? Yes or No ");
 				braveInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(braveInfo))
@@ -264,16 +312,20 @@ public class RentTrial
 						if("Yes".equalsIgnoreCase(choiceBrave))
 						{
 							System.out.println(""
-									+"\n Thank you for renting Brave, That will Be $3.00");
+									+"\n Thank you for renting Brave.");
+							System.out.print(""
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();
 						}
 						else
 							System.out.print(""
-									+ "\n Would you like to rent another movie? Yes or No");				
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();			
 						}
 						}
 			if("Spiderman Homecomming".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice);
+				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
 				System.out.print("Would you like more Information on Spideman Homecoming? Yes or No ");
 				spidermanHomecomingInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(spidermanHomecomingInfo))
@@ -291,13 +343,18 @@ public class RentTrial
 						if("Yes".equalsIgnoreCase(choiceSpidermanHomecoming))
 						{
 							System.out.println(""
-									+"\n Thank you for renting Spiderman Homecoming, That will Be $3.00");
+									+"\n Thank you for renting Spiderman Homecoming.");
+							System.out.print(""
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();
 						}
 						else
 							System.out.print(""
-									+ "\n Would you like to rent another movie? Yes or No");				
+									+"\n If you would like to rent another movie please enter the movie title");	
+							movieChoice = input.nextLine();				
 						}
 						}
+			 System.out.println("Your total was $" + total);
 				}
 				}
 					
