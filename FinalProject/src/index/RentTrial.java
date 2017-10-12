@@ -43,6 +43,14 @@ public class RentTrial
 		
 			System.out.println("The Kingsman 2");
 			System.out.println("American Assassin");
+			System.out.println("It");
+			System.out.println("My Little Pony");
+			System.out.println("Blade Runner 2049");
+			System.out.println("American Made");
+			System.out.println("The Mountain Between Us");
+			System.out.println("Happy Death Day");
+			System.out.println("Brave");
+			System.out.println("Spiderman Homecoming");
 			
 			System.out.print("what Movie do you want to rent ");
 			movieChoice = input.nextLine();
@@ -187,6 +195,7 @@ public class RentTrial
 					choiceBladeRunner = input.nextLine();
 						if("Yes".equalsIgnoreCase(choiceBladeRunner))
 						{
+							total = (total + bladeRunnerCost);
 							System.out.println(""
 									+"\n Thank you for renting Blade Runner 2049.");
 							System.out.print(""
@@ -218,6 +227,7 @@ public class RentTrial
 					choiceAmericanMade = input.nextLine();
 						if("Yes".equalsIgnoreCase(choiceAmericanMade))
 						{
+							total = (total + americanMadeCost);
 							System.out.println(""
 									+"\n Thank you for renting American Made.");
 							System.out.print(""
@@ -248,6 +258,7 @@ public class RentTrial
 					choiceTheMountainBetweenUs = input.nextLine();
 						if("Yes".equalsIgnoreCase(choiceTheMountainBetweenUs))
 						{
+							total = (total + theMountainBetweenUsCost);
 							System.out.println(""
 									+"\n Thank you for renting The Mountain Betwween Us.");
 							System.out.print(""
@@ -279,6 +290,7 @@ public class RentTrial
 					choiceHappyDeathDay = input.nextLine();
 						if("Yes".equalsIgnoreCase(choiceHappyDeathDay))
 						{
+							total = (total + happyDeathDayCost);
 							System.out.println(""
 									+"\n Thank you for renting Happy Death Day.");
 							System.out.print(""
@@ -311,6 +323,7 @@ public class RentTrial
 					choiceBrave = input.nextLine();
 						if("Yes".equalsIgnoreCase(choiceBrave))
 						{
+							total = (total + braveCost);
 							System.out.println(""
 									+"\n Thank you for renting Brave.");
 							System.out.print(""
@@ -342,6 +355,7 @@ public class RentTrial
 					choiceSpidermanHomecoming = input.nextLine();
 						if("Yes".equalsIgnoreCase(choiceSpidermanHomecoming))
 						{
+							total = (total + spidermanHomecomingCost);
 							System.out.println(""
 									+"\n Thank you for renting Spiderman Homecoming.");
 							System.out.print(""
