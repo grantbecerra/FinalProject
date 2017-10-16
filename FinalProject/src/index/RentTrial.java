@@ -78,15 +78,7 @@ public class RentTrial
 							total = (total + kingsman2Cost);
 							System.out.println(""
 									+"\n Thank you for renting The Kingsman 2.");
-//							System.out.print(""
-//									+"\n If you would like to rent another movie please enter the movie title");	
-//							
-//							movieChoice = input.nextLine();
 						}
-//						else
-//							System.out.print(""
-//									+"\n If you would like to rent another movie please enter the movie title");	
-//							movieChoice = input.nextLine();
 					}
 			}
 			if("American Assassin".equalsIgnoreCase(movieChoice))
@@ -110,9 +102,7 @@ public class RentTrial
 									total = (total + americanAssassinCost);
 									System.out.println(""
 											+"\n Thank you for renting American Assassin.");
-								
 								}
-							
 						}
 				}
 	
@@ -136,8 +126,7 @@ public class RentTrial
 						{
 							total = (total + itCost);
 							System.out.println(""
-									+"\n Thank you for renting It.");
-								
+									+"\n Thank you for renting It.");		
 						}
 						}
 			}
@@ -209,8 +198,7 @@ public class RentTrial
 						{
 							total = (total + americanMadeCost);
 							System.out.println(""
-									+"\n Thank you for renting American Made.");
-							
+									+"\n Thank you for renting American Made.");	
 						}
 						}
 			}
@@ -235,7 +223,6 @@ public class RentTrial
 							total = (total + theMountainBetweenUsCost);
 							System.out.println(""
 									+"\n Thank you for renting The Mountain Betwween Us.");
-							
 						}
 					}
 			}
