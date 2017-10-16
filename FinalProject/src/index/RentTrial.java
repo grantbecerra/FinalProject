@@ -277,7 +277,7 @@ public class RentTrial
 						}
 						}
 			}
-			if("Spiderman Homecomming".equalsIgnoreCase(movieChoice))
+			if("Spiderman Homecoming".equalsIgnoreCase(movieChoice))
 			{
 				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
 				System.out.print("Would you like more Information on Spideman Homecoming? Yes or No ");
