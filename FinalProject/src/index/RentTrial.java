@@ -302,7 +302,7 @@ public class RentTrial
 						}
 					}
 			}
-			 System.out.println("Your total was $" + total);
+			 System.out.println("Your total was $" + total * 1.07);
 			 System.out.print(""
 						+"\n Would You like to rent another movie Yes or No?");	
 
