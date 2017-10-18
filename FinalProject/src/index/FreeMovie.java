@@ -1,9 +1,10 @@
 package index;
 
+import java.util.Random;
 import java.util.Scanner;
 
-public class RentTrial 
-{
+public class FreeMovie {
+
 		// TODO Auto-generated method stub
 	public static void main(String[] args) 
 	{
@@ -53,12 +54,12 @@ public class RentTrial
 			System.out.println("Brave");
 			System.out.println("Spiderman Homecoming");
 			
-	do {	
+		
 			System.out.print("what Movie do you want to rent ");
 			movieChoice = input.nextLine();
 			if("The Kingsman 2".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
+				System.out.println("You chose " + movieChoice + " this movie is free");
 				System.out.print("Would you like more Information on The Kingsman 2? Yes or No ");
 				theKingsman2Info = input.nextLine();
 				if("Yes".equalsIgnoreCase(theKingsman2Info))
@@ -83,7 +84,7 @@ public class RentTrial
 			}
 			if("American Assassin".equalsIgnoreCase(movieChoice))
 					{
-				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
+				System.out.println("You chose " + movieChoice + " this movie is free");
 				System.out.print("Would you like more Information on American Assassin? Yes or No ");
 				americanAssassinInfo = input.nextLine();
 				if("Yes".equalsIgnoreCase(americanAssassinInfo))
@@ -108,7 +109,7 @@ public class RentTrial
 	
 			if("It".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
+				System.out.println("You chose " + movieChoice + " this movie is free");
 				System.out.print("Would you like more Information on It? Yes or No ");
 				itInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(itInfo))
@@ -132,7 +133,7 @@ public class RentTrial
 			}
 			if("My Little Pony".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice + " this movie cost 2.00");
+				System.out.println("You chose " + movieChoice + " this movie is free");
 				System.out.print("Would you like more Information on My Little Pony? Yes or No ");
 				myLittlePonyInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(myLittlePonyInfo))
@@ -154,7 +155,7 @@ public class RentTrial
 			}
 			if("Blade Runner 2049".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
+				System.out.println("You chose " + movieChoice + " this movie is free");
 				System.out.print("Would you like more Information on Blade Runner 2049? Yes or No ");
 				bladeRunnerInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(bladeRunnerInfo))
@@ -179,7 +180,7 @@ public class RentTrial
 			}
 			if("American Made".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
+				System.out.println("You chose " + movieChoice + " this movie is free");
 				System.out.print("Would you like more Information on American Made? Yes or No ");
 				americanMadeInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(americanMadeInfo))
@@ -204,7 +205,7 @@ public class RentTrial
 			}
 			if("The Mountain Betwween Us".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice + " this movie cost 2.00");
+				System.out.println("You chose " + movieChoice + " this movie is free");
 				System.out.print("Would you like more Information on The Mountain Betwween Us? Yes or No ");
 				choiceTheMountainBetweenUs = input.nextLine();
 					if("Yes".equalsIgnoreCase(choiceTheMountainBetweenUs))
@@ -228,7 +229,7 @@ public class RentTrial
 			}
 			if("Happy Death Day".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
+				System.out.println("You chose " + movieChoice + " this movie is free");
 				System.out.print("Would you like more Information on Happy Death Day? Yes or No ");
 				happyDeathDayInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(happyDeathDayInfo))
@@ -253,7 +254,7 @@ public class RentTrial
 			}
 			if("Brave".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
+				System.out.println("You chose " + movieChoice + " this movie is free");
 				System.out.print("Would you like more Information on Brave? Yes or No ");
 				braveInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(braveInfo))
@@ -279,7 +280,7 @@ public class RentTrial
 			}
 			if("Spiderman Homecoming".equalsIgnoreCase(movieChoice))
 			{
-				System.out.println("You chose " + movieChoice + " this movie cost 3.00");
+				System.out.println("You chose " + movieChoice + " this movie is free");
 				System.out.print("Would you like more Information on Spideman Homecoming? Yes or No ");
 				spidermanHomecomingInfo = input.nextLine();
 					if("Yes".equalsIgnoreCase(spidermanHomecomingInfo))
@@ -302,23 +303,17 @@ public class RentTrial
 						}
 					}
 			}
-			 System.out.println("Your total was $" + total * 1.07);
+			 System.out.println("Your Movie was free thank you");
 			 System.out.print(""
 						+"\n Would You like to rent another movie Yes or No?");	
-
-				again = input.nextLine();
-			}while ("Yes".equalsIgnoreCase(again));
-		
+			String choice;
+			choice = input.nextLine();
+			if ("Yes".equalsIgnoreCase(choice))
+			 {
+			 RentTrial.main(args);	
+			
+	}
 	}
 }
-	
-					
-				
-		
-	
-
-
-
-
 
 
